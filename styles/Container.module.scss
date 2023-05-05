@@ -1,0 +1,51 @@
+.container {
+  //   text-align: center;
+  overflow: hidden;
+  max-width: 700px;
+  margin: auto;
+  padding: 8px 10px;
+  animation: fadein 3s ease-in-out;
+
+  @keyframes fadein {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 0.25;
+    }
+
+    50% {
+      opacity: 0.5;
+    }
+
+    75% {
+      opacity: 0.75;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+  h1 {
+    font-family: var(--font-bruno);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+
+    @media (max-width: 768px) {
+      font-size: 1.8rem;
+      line-height: 35px;
+    }
+  }
+  p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    text-align: center;
+    @media (max-width: 768px) {
+      font-size: 1rem;
+      text-align: left;
+    }
+  }
+}
