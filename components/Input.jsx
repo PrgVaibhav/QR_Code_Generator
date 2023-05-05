@@ -1,6 +1,7 @@
 import { useState } from "react";
 import styles from "../styles/Input.module.scss";
 import axios from "axios";
+import Image from "next/image";
 const Input = () => {
   const [input, setInput] = useState(null);
   const [response, setResponse] = useState(null);
@@ -51,7 +52,14 @@ const Input = () => {
 
       {response && (
         <section className={styles.qr_container}>
-          <img src={url} alt="QR Code" />
+          <Image
+            src={url}
+            alt="QR Code"
+            width={200}
+            height={200}
+            aria-label="QR Code"
+            priority
+          />
           <a
             type="button"
             className={styles.download}
