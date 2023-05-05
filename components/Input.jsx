@@ -10,7 +10,7 @@ const Input = () => {
     setInput(e.target.value);
   };
 
-  const url = `http://api.qrserver.com/v1/create-qr-code/?data=${input}&size=100x100`;
+  const url = `https://api.qrserver.com/v1/create-qr-code/?data=${input}&size=100x100`;
 
   const handleClick = async () => {
     if (!input) return alert("Please enter a value"); // if the input is empty, alert the user
